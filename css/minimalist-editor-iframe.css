@@ -1,0 +1,16 @@
+body#tinymce.wp-editor {
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  transition: background 0.5s, color 0.5s;
+  color: #222;
+}
+
+body#tinymce.wp-editor.minimalist-editor-sans-serif {
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+body#tinymce.wp-editor.minimalist-editor-darkmode-on {
+  background: #333333;
+  color: #ececec;
+}

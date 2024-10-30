@@ -1,0 +1,99 @@
+body {
+  transition: background 0.5s;
+}
+
+.appearance_page_minimalist-editor th, .appearance_page_minimalist-editor form h2 {
+  display: none;
+}
+
+.appearance_page_minimalist-editor .form-table td {
+  padding-left: 0;
+}
+
+#wpadminbar {
+  transition: all 0.55s;
+}
+
+#titlewrap {
+  position: relative;
+  z-index: 5;
+  transition: transform 1s 0s;
+}
+
+#titlewrap input {
+  transition: border-color 0.5s, background 0.5s;
+}
+
+.wp-editor-expand #wp-content-editor-container {
+  transition: border-color 0.5s;
+}
+
+.wp-editor-expand #wp-content-editor-tools, #edit-slug-box {
+  transition: opacity 0.5s 0.5s;
+}
+
+#wp-content-editor-container, div.mce-panel {
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+#post-status-info, div.mce-toolbar-grp > div, div.mce-toolbar-grp, .mce-statusbar {
+  transition: opacity 0.5s;
+}
+
+body.focus-on {
+  background: white;
+}
+
+body.focus-on #post-status-info, body.focus-on #edit-slug-box, body.focus-on div.mce-toolbar-grp > div, body.focus-on .wp-editor-expand #wp-content-editor-tools, body.focus-on div.mce-toolbar-grp, body.focus-on .mce-statusbar {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+body.focus-on .wp-editor-expand #wp-content-editor-tools, body.focus-on #edit-slug-box {
+  transition: opacity 0.5s 0s;
+}
+
+body.focus-on #wpadminbar {
+  transform: translate3d(0, -100%, 0);
+}
+
+body.focus-on #titlewrap input {
+  border-color: transparent;
+  background: white;
+  box-shadow: none;
+}
+
+body.focus-on #titlewrap {
+  transition: transform 1.2s 0.2s;
+  transform: translate3d(0, 100px, 0);
+}
+
+body.focus-on .wp-editor-expand #wp-content-editor-container {
+  border-color: transparent;
+}
+
+body.focus-on div#wpbody {
+  position: static;
+}
+
+body.focus-on #post-body-content {
+  z-index: 9998;
+}
+
+body.focus-on.minimalist-editor-darkmode {
+  background: #333333;
+}
+
+body.focus-on.minimalist-editor-darkmode div.mce-panel, body.focus-on.minimalist-editor-darkmode div#wpbody {
+  background-color: #333333 !important;
+}
+
+body.focus-on.minimalist-editor-darkmode #wp-content-editor-container {
+  border-color: #333;
+}
+
+body.focus-on.minimalist-editor-darkmode #titlediv #title {
+  background-color: #333;
+  border-color: #333;
+  color: #ececec;
+}
